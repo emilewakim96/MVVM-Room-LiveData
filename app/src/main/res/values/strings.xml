@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UserPostsApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="load_user_posts">Load user posts</string>
+    <string name="previous">Previous</string>
+    <string name="user_posts">User Posts</string>
+</resources>
