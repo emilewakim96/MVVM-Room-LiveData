@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="lb.test.userpostsapp.ui.home.HomeFragment"
+        android:name="lb.test.userpostsapp.fragment.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
 
@@ -18,19 +18,19 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="lb.test.userpostsapp.ui.dashboard.DashboardFragment"
+        android:name="lb.test.userpostsapp.fragment.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="lb.test.userpostsapp.ui.notifications.NotificationsFragment"
+        android:name="lb.test.userpostsapp.fragment.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/user_posts"
-        android:name="lb.test.userpostsapp.ui.home.UserPostsFragment"
+        android:name="lb.test.userpostsapp.fragment.UserPostsFragment"
         android:label="@string/user_posts"
         tools:layout="@layout/fragment_user_posts">
 

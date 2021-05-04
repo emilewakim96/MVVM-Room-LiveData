@@ -1,4 +1,4 @@
-package lb.test.userpostsapp.ui.home
+package lb.test.userpostsapp.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_home.*
 import lb.test.userpostsapp.R
+import lb.test.userpostsapp.viewmodel.HomeViewModel
 
 class HomeFragment : Fragment() {
 
@@ -24,8 +25,7 @@ class HomeFragment : Fragment() {
     super.onCreate(savedInstanceState)
     homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
-    // This callback will only be called when MyFragment is at least Started.
-
+    // This callback will only be called when fragment is at least Started.
     val callback = object : OnBackPressedCallback(true /* enabled by default */) {
       override fun handleOnBackPressed() {
         // Handle the back button event

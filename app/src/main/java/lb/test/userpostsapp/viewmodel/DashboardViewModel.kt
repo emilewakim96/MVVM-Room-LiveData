@@ -1,4 +1,4 @@
-package lb.test.userpostsapp.ui.dashboard
+package lb.test.userpostsapp.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

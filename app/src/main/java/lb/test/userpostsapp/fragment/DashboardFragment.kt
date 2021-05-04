@@ -1,4 +1,4 @@
-package lb.test.userpostsapp.ui.dashboard
+package lb.test.userpostsapp.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import lb.test.userpostsapp.R
+import lb.test.userpostsapp.viewmodel.DashboardViewModel
 
 class DashboardFragment : Fragment() {
 
