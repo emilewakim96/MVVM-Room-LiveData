@@ -12,10 +12,11 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_home.*
 import lb.test.userpostsapp.R
 import lb.test.userpostsapp.viewmodel.HomeViewModel
+import org.koin.android.ext.android.inject
 
 class HomeFragment : Fragment() {
 
-  private lateinit var homeViewModel: HomeViewModel
+  private val homeViewModel by inject<HomeViewModel>()
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
     return inflater.inflate(R.layout.fragment_home, container, false)
@@ -23,7 +24,6 @@ class HomeFragment : Fragment() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
     // This callback will only be called when fragment is at least Started.
     val callback = object : OnBackPressedCallback(true /* enabled by default */) {
